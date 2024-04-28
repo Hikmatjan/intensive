@@ -1,48 +1,37 @@
 import styled from "styled-components";
 const Wrapper = styled.div`
   width: 80%;
-  height: 78px;
   margin: auto;
+`;
+Wrapper.NavbarWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #46a358;
+`;
+Wrapper.NavbarWrapper.Left = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #46a358;
-
   .img {
     cursor: pointer;
   }
 `;
-Wrapper.Left = styled.div``;
-Wrapper.Middle = styled.div`
+Wrapper.NavbarWrapper.Middle = styled.div`
   display: flex;
   align-items: center;
-  gap: 50px;
-`;
-Wrapper.Middle.Item = styled.h3`
-  margin: 0, 10px;
-  cursor: pointer;
-  font-family: Cora Pro;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.11px;
-  text-align: left;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: 1px;
-    background-color: #46a358;
-    border-bottom: 2px solid #46a358;
-    bottom: -29px;
-  }
-  &:hover::before {
-    display: block;
+  gap: 20px;
+  h3 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
   }
 `;
-Wrapper.Right = styled.div`
+Wrapper.NavbarWrapper.Right = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
@@ -52,6 +41,16 @@ Wrapper.Right = styled.div`
   .icon {
     font-size: 20px;
   }
+`;
+Wrapper.CarouselWrapper = styled.div`
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  background: linear-gradient(
+    97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
 `;
 
 export { Wrapper };
